@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LaughPage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+        .b {
+            padding-top: 5px !important;
+        }
+
+        @media (max-width: 768px) {
+            form {
+                width: 100% !important;
+                margin-left: 0px !important;
+                text-align: center !important;
+
+            }
+
+            .whatweedo {
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+            .bpartners {
+                width: 100% !important;
+                height: 100% !important;
+                margin-left: 20px;
+
+            }
+
+            .partners {
+                width: 70% !important;
+                float: left !important;
+                margin-left: 20px !important;
+
+            }
+
+
+            #collapsibleNavbar {
+                width: 0% !important;
+                margin-left: 0px !important;
+            }
+
+            .discovers {
+                width: 100% !important;
+                height: 1000px !important;
+            }
+
+            .team {
+                width: 100% !important;
+            }
+
+            .red {
+                text-align: center !important;
+                padding-right: 143px;
+               
+            }
+
+            .fun {
+                width: 100%;
+            margin-left: 90px;
+
+            }
+
+            .team {
+                width: 100% !important;
+                height: 900px !important;
+
+            }
+        }
+
+
+        .navbar-brand {
+            color: rgb(248, 8, 8) !important;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 28px;
+            padding-right: 20px !important;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+            color: red;
+            border-color: red;
+        }
+
+        .navbar-toggler span {
+            color: red;
+
+        }
+
+        ul li a {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 17px !important;
+            padding-right: 25px !important;
+            color: rgb(43, 39, 39);
+            font-weight: 800;
+            padding-top: 20px !important;
+        }
+
+        a:hover {
+            color: red
+        }
+
+
+        .get_start {
+            background-color: rgb(223, 7, 7) !important;
+            color: white;
+            font-family: 'Nunito Sans', sans-serif;
+            border-radius: 20px !important;
+            width: 120px;
+            height: 50px;
+            margin-top: 10px !important;
+            border-color: rgb(223, 7, 7) !important;
+            ;
+            font-weight: bold;
+            border: none;
+        }
+
+        .get_start:hover {
+            background-color: white !important;
+            color: red;
+            border-color: red;
+        }
+
+        .youtube {
+            background-color: white;
+            color: red;
+            border-radius: 30px;
+            font-size: 50px;
+
+        }
+
+        .image {
+            background-image: url(https://demo.epic-webdesign.com/tf-launchpage/v1/images/bg0.jpg
+);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            min-height: 600px;
+            margin-top: 15px;
+            background-position: bottom 1000px !important;
+
+
+        }
+
+        .award {
+            padding-top: 150px;
+            color: white !important;
+
+        }
+
+        h5 {
+            color: white;
+            font-weight: 400;
+            padding-top: 22px;
+
+        }
+
+        form {
+            width: 450px;
+            height: 430px;
+            color: white;
+            margin-top: 100px !important;
+            background-color: white;
+            margin-left: 100px;
+            border-radius: 17px;
+            text-align: center;
+
+
+
+        }
+
+        h4 {
+            color: rgb(63, 60, 60);
+            padding-top: 40px;
+            padding-right: 80px;
+
+
+
+        }
+
+        h6 {
+            color: grey;
+            padding-right: 80px;
+            height: 0px;
+        }
+
+        .control1 {
+            width: 90%;
+            height: 50px;
+            margin-top: 20px;
+        }
+
+
+
+
+
+
+        .control2 {
+            width: 90%;
+            height: 50px;
+            margin-top: 20px;
+
+        }
+
+        select {
+            width: 90%;
+            height: 50px;
+            margin-top: 20px;
+
+        }
+
+        .btn-primary {
+            background-color: rgb(250, 7, 7);
+            margin-top: 20px;
+            width: 90%;
+            height: 50px;
+        }
+
+        #watch {
+            color: black;
+            float: right;
+            padding-right: 300px;
+            padding-top: 10px;
+
+        }
+
+        .nocredit {
+            padding-top: 10px;
+        }
+
+        .featured {
+            color: black !important;
+            font-size: large;
+
+        }
+
+
+
+        .bpartners {
+            text-align: center !important;
+            width: 100%;
+            height: 130px;
+            margin-top: 40px;
+        }
+
+        .partners {
+            max-height: 55px;
+            opacity: 0.4;
+            margin-left: 80px;
+            margin-top: 20px;
+            float: left;
+        }
+
+
+
+        .whatweedo {
+
+            background-color: #f1faff;
+            height: 500px;
+            padding-top: 50px !important;
+            padding-left: 20px;
+        }
+
+        .what {
+            font-size: 38px;
+            font-family: 'Nunito', sans-serif;
+            color: #071e55;
+
+        }
+
+        .discover {
+            font-size: 20px;
+            color: #7c8595;
+            margin-top: -28px;
+            width: 100%;
+
+
+        }
+
+        .design {
+            text-align: center;
+        }
+
+        .icons {
+            margin-top: 35px;
+        }
+
+        .google {
+            border-radius: 20px;
+            background-color: rgb(0, 102, 255);
+            height: 80px;
+            width: 80px;
+            border: none !important;
+
+        }
+
+
+        .iconanalitycs {
+            color: white;
+            font-size: 40px;
+
+
+        }
+
+        .Brandawareness {
+            border-radius: 20px;
+            background-color: red;
+            height: 80px;
+            width: 80px;
+            border: none !important;
+        }
+
+        .iconheart {
+            color: white;
+            font-size: 40px;
+
+        }
+
+        .Graphicdesign {
+            border-radius: 20px;
+            background-color: rgb(77, 165, 77);
+            height: 80px;
+            width: 80px;
+            border: none !important;
+        }
+
+        .iconanchor {
+            color: white;
+            font-size: 40px;
+
+        }
+
+        .span {
+            font-weight: bold;
+            color: #071e55;
+            font-size: 21px !important;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .spans {
+            color: #7c8595;
+            font-size: 17px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .quias {
+            color: #7c8595;
+            font-size: 17px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        .discovers {
+            margin-top: 50px !important;
+            width: 100%;
+            height: 440px;
+            ;
+        }
+
+        .img123 {
+            width: 100% !important;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+        .discovermore {
+            color: white;
+            background-color: red;
+            border-radius: 40px;
+            width: 150px;
+            height: 55px;
+            font-weight: bold;
+            margin-right: 400px !important;
+            border: none !important;
+        }
+
+        .team {
+            width: 100%;
+            text-align: center;
+            height: 500px;
+            background-color: #f1faff;
+            padding-top: 70px !important;
+
+        }
+
+        .team1 :hover {
+            background-color: white;
+        }
+
+        .team2 :hover {
+            background-color: white;
+        }
+
+        .team3 :hover {
+            background-color: white;
+        }
+
+        .customize {
+            color: #071e55;
+            ;
+            font-weight: 700;
+            font-size: 21px;
+            margin-right: 10px !important;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .chart {
+            font-size: 55px;
+            color: blue;
+            padding-right: 15px;
+            float: left;
+            margin-top: 4px;
+
+        }
+
+        .sitemap {
+            color: red;
+            font-size: 65px;
+            padding-right: 15px;
+            margin-top: 4px;
+            float: left;
+        }
+
+
+        .rocket {
+            color: green;
+            font-size: 65px;
+            padding-right: 15px;
+            margin-top: 4px;
+            float: left;
+        }
+
+
+
+
+
+        .red {
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0.795);
+            text-align: center;
+            height: 750 px;
+        }
+
+        .fun {
+            color: white;
+            padding-top: 22px;
+            width: 100%
+        }
+
+        .gem {
+            color: white;
+            font-size: 50px;
+        }
+
+        .a {
+            color: white;
+            font-size: 50px;
+            padding-left: 200px;
+
+
+        }
+
+        .projects {
+            font-size: large;
+
+
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="b   ">
+        <div class="container">
+            <nav class="navbar navbar-expand-md ">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">LaunchPage</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <!-- Navbar links -->
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="get_start"> Get Start </button>
+                        </li>
+                        </li>
+
+                    </ul>
+
+                </div>
+        </div>
+        </nav>
+    </div>
+
+    <!-- 2 -->
+    <div id="home">
+        <div class="image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="award">Award-Winning Agency Based In Manchested </h1>
+                        <h5>Excepteur sint occaecat cupidatat nonet proident, vante
+                            nisn culpa qui officia deserunt etimus quis autem nets
+                            lorem entimus velis netsad.</h5>
+                        <a href="https://www.youtube.com/watch?v=WDxMas784iY&list=RDQMf1xWcDCppAQ&start_radio=1"><i
+                                class="fa fa-youtube-play  youtube" aria-hidden="true"></i> </a>
+                        <p id="watch"> Watch Presentation Video </p>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+
+                            <h4>Get Your Free 14-Day Trial</h4>
+                            <h6>Velis demo enim quia tempor magnet.</h6>
+
+
+                            <input class="control1" id="name" form="control" type="text" placeholder="Company Name*">
+                            <input class="control2" id="email" form="control" type="text" placeholder="Email Adress*">
+
+                            <select id="q">
+                                <option value="1"> Wee Need LaungPage for... </option>
+                                <option> Our Support Team </option>
+                                <option> Our Sales Depatment </option>
+                            </select>
+                            <button onclick="f()" type="button" class="btn btn-primary    ">START MY FREE-14 DAY
+                                TRIAL</button>
+                            <h6 class="nocredit">No Credit Card • No Installation Required</h6>
+
+                        </form>
+                        <script>
+                            function f() {
+                                var name = document.getElementById("name").value;
+                                var email = document.getElementById("email").value;
+                                var select = document.getElementById("q").value;
+                                if (name.trim().length == 0) {
+                                    swal("ugursuz!", "adi daxil edin", "error");
+                                }
+                                else if (email.trim().length == 0) {
+                                    swal("ugursuz!", "email daxil edin", "error");
+                                }
+                                else if (select == "1")
+                                    swal("Secim edin");
+                                else {
+                                    swal("Ugurlu!", "sizinle tezlikle elaqe yaradilacaq");
+
+
+                                }
+
+
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="bpartners">
+                <div class="row">
+                    <div class="col-md-2.4 featured"> As featured in:</div>
+                    <div class="col-md-2.4 "><img class="partners"
+                            src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award4a.png" alt=""></div>
+                    <div class="col-md-2.4"><img class="partners"
+                            src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award5.png" alt=""></div>
+                    <div class="col-md-2.4"><img class="partners"
+                            src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award3a.png" alt=""></div>
+                    <div class="col-md-2.4"><img class="partners"
+                            src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/award1a.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="whatweedo">
+
+            <div class="container design  ">
+                <h3 class="what">What We do</h3><br>
+                <p class="discover">Discover how our amazing team can help your business.</p>
+                <div class="row  icons   ">
+                    <div class="col-md-4">
+                        <button class="google">
+                            <i class="fa fa-bar-chart  iconanalitycs   " aria-hidden="true"></i>
+                        </button>
+                        <h5 class="span">Google Analitycs</h5>
+                        <span class="spans">Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum
+                            nisle varius netsum.</span>
+                    </div>
+
+                    <div class="col-md-4"> <button class="Brandawareness">
+                            <i class="fa fa-heart  iconheart " aria-hidden="true"></i>
+                        </button>
+                        <h5 class="span">Brand Awareness</h5>
+                        <span class="spans">Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum
+                            nisle varius netsum.</span>
+                    </div>
+
+                    <div class="col-md-4"><button class="Graphicdesign">
+                            <i class="fa fa-anchor  iconanchor" aria-hidden="true"></i>
+                        </button>
+                        <h5 class="span">Graphic Design</h5>
+                        <span class="spans">Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae etsum
+                            nisle varius netsum.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row  discovers ">
+                <div class="col-md-6  img123  ">
+                    <img src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about001.jpg    " class="img123"
+                        alt="img123" srcset="">
+
+
+
+
+                </div>
+                <div class="col-md-6">
+                    <h2>Discover how we can help you to grow your business fast.</h2>
+
+                    <p class="quias">Velis demo enim ipsam voluptatem quia voluptas sit
+                        aspernatur netsum lorem fugit, seditum netis velas matrix net nesciunt.</p>
+                    <ul class="quias">
+                        <li>Quias netus magni netsum eos qui ratione sequi.</li>
+                        <li>Venis ratione sequi netus enim quia tempor magni.</li>
+                        <li>Enim ipsam netus voluptatem quia voluptas.</li>
+                    </ul>
+
+                    <button class="discovermore"> Discover more </button>
+                </div>
+            </div>
+        </div>
+        <script>
+
+
+        </script>
+        <div class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="team1">
+                            <h5 class="customize">
+                                <i class="fa fa-line-chart  chart " aria-hidden="true"> </i>Customize
+                                your workflow
+                            </h5>
+                            <p class="quias">Manage any process and be ready to adress any challenge with total easy</p>
+                        </div>
+                        <div class="team2">
+                            <h5 class="customize"> <i class="fa fa-sitemap  sitemap  " aria-hidden="true"></i>Easy
+                                Onboarding, fast adaption</h5>
+                            <p class="quias">With Square getting your team on board is as simple as sending an email.
+                            </p>
+                        </div>
+                        <div class="team3">
+                            <h5 class="customize">
+                                <i class="fa fa-rocket  rocket   " aria-hidden="true"></i>
+                                Improve subscriber retention
+                            </h5>
+                            <p class="quias">Analyze customers by region, discounts and more and put a plan in place.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-7"><img class="img123"
+                            src="https://demo.epic-webdesign.com/tf-launchpage/v1/images/about2.jpg" alt="" srcset="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="red">
+
+
+            <div class="container">
+                <h1 class="fun"> Fun Facts About Our Agency</h1>
+                <div class="row">
+                    <div class="col-md-2 a"><i class="fa fa-diamond" aria-hidden="true"></i>
+                        <span class=" 1050">1050+</span>
+                        <p class=" projects">Projects Completed</p>
+                    </div>
+                    <div class="col-md-2 a "><i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <span>217k</span>
+                        <p class=" projects">Happy Clients</p>
+                    </div>
+                    <div class="col-md-2 a"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <span>1210</span>
+                        <p class=" projects">Design Awards</p>
+                    </div>
+                    <div class="col-md-2 a"><i class="fa fa-anchor" aria-hidden="true"></i>
+                        <span>2137</span>
+                        <p class=" projects">Line Of Codes</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+</body>
+<div class="c">
+
+    <img class="img5" src="http://jellydemos.com/html/baume/assets/images/resources/landing/dp-bg.png">
+</div>
+
+</html>
